@@ -1,0 +1,253 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    margin-top: 50px;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 3px solid #0056b3;
+}
+
+header .d-flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header button {
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+header button:hover {
+    transform: scale(1.05);
+    background-color: #dc3545;
+}
+
+/* Table Styling */
+table {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Search Input Field */
+#searchInput {
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button Styling */
+button {
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effects */
+button:hover {
+    transform: scale(1.05);
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Flexbox Layout for Buttons */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.d-flex button {
+    margin: 10px;
+}
+
+/* Responsiveness for Small Screens */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .d-flex button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #searchInput {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-bottom: 2px solid #007bff;
+    background-color: #f8f9fa;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-footer .btn {
+    border-radius: 25px;
+}
+
+/* Textarea and Form Inputs */
+input, select, textarea {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Custom Checkbox for Table */
+table input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-left: 10px;
+}
+
+/* Logout Button Styling */
+#logoutButton {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#logoutButton:hover {
+    transform: scale(1.05);
+    background-color: #dc3545;
+}
